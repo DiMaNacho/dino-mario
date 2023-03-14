@@ -1,0 +1,118 @@
+@font-face {
+  font-display: auto;
+  font-family: 'aprou';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/AProUltraBlack.ttf') format('opentype');
+}
+
+:root {
+  --amarillo: #f3cc41;
+}
+
+* {
+  cursor: url(./assets/cursor.png) 7 2, auto !important;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--amarillo);
+  cursor: url(./assets/cursor.png) 7 2, auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+header {
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  max-width: 100%;
+  padding: 0 15px;
+  width: 100vw;
+}
+
+header .logo {
+  height: 50px;
+  border: 0;
+}
+
+header .logo img {
+  height: 100%;
+}
+
+header .entradas {
+  align-items: center;
+  background-image: url(./assets/button-booknow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-family: aprou, sans-serif;
+  font-size: 14px;
+  gap: 10px;
+  height: 50px;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 6px 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .entradas img {
+  height: 32px;
+  margin: -6px 0 0;
+}
+
+.logo-pelicula {
+  width: 50vw;
+}
+
+canvas {
+  height: calc(150 * 100vw / 600 * 0.95) !important;
+  width: 95vw !important;
+}
+
+footer {
+  display: flex;
+  gap: 7vw;
+  height: 100px;
+  margin: 5vh 0 0;
+  order: 1;
+}
+
+footer a {
+  display: flex;
+  height: 100%;
+}
+
+footer a img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .logo-pelicula {
+    width: 300px;
+  }
+
+  canvas {
+    height: 150px !important;
+    width: 600px !important;
+  }
+}

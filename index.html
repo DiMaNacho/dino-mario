@@ -4,37 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>Chrome Dino</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        align-items: center;
-        background-color: #f7f7f7;
-        display: flex;
-        justify-content: center;
-      }
-
-      @keyframes octocat-wave {
-        0%, 100% { transform: rotate(0) }
-        20%, 60% { transform: rotate(-25deg) }
-        40%, 80% { transform: rotate(10deg) }
-      }
-
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <a href="/" class="logo"><img src="./assets/supermario-logo.png" alt="Super Mario Bros."></a>
+      <a href="#" class="entradas">¡Comprá tus<br />entradas ya!<img src="./assets/booknow.png" alt="¡Comprá tus entradas ya!"></a>
+    </header>
+    <img src="./assets/supermario-logo-pelicula.png" alt="Super Mario Bros. La Película" class="logo-pelicula">
+    <footer>
+      <a href="https://lifecinemas.com.uy/" class="lifecinemas"><img src="./assets/logo-LIFE-CINEMA_600x.webp" alt="LifeCinemas"></a>
+      <a href="https://unilink.uy/dimanacho" class="dimanacho"><img src="./assets/dimanacho-logo.png" alt="DiMaNacho"></a>
+    </footer>
     <script type="module" src="./lib/index.js"></script>
   </body>
 </html>
