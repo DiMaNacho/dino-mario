@@ -8,7 +8,7 @@
 }
 
 :root {
-  --amarillo: #f3cc41;
+  --celeste: #5b95ff;
 }
 
 * {
@@ -24,95 +24,77 @@ body {
 
 body {
   align-items: center;
-  background-color: var(--amarillo);
+  background-color: var(--celeste);
+  background-image: url(./assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: url(./assets/cursor.png) 7 2, auto !important;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: flex-start;
-}
-
-header {
-  align-items: center;
-  background-color: #fff;
-  box-sizing: border-box;
-  display: flex;
-  height: 85px;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  height: 100vh;
+  justify-content: center;
   max-width: 100%;
-  padding: 0 15px;
+  overflow: hidden;
   width: 100vw;
-}
-
-header .logo {
-  height: 50px;
-  border: 0;
-}
-
-header .logo img {
-  height: 100%;
-}
-
-header .entradas {
-  align-items: center;
-  background-image: url(./assets/button-booknow.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  font-family: aprou, sans-serif;
-  font-size: 14px;
-  gap: 10px;
-  height: 50px;
-  justify-content: space-between;
-  letter-spacing: 0.5px;
-  margin: 0;
-  padding: 6px 10px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-header .entradas img {
-  height: 32px;
-  margin: -6px 0 0;
-}
-
-.logo-pelicula {
-  width: 50vw;
 }
 
 canvas {
   height: calc(150 * 100vw / 600 * 0.95) !important;
+  max-width: 600px;
+  position: absolute;
+  top: 45vh;
   width: 95vw !important;
 }
 
-footer {
+.links {
   display: flex;
-  gap: 7vw;
-  height: 100px;
-  margin: 5vh 0 0;
-  order: 1;
+  height: 177.7777vw;
+  justify-content: center;
+  max-width: 900px;
+  position: relative;
+  width: 100vw;
+}
+.links a {
+  background-color: transparent;
+  display: flex;
+  font-size: 0;
+  position: absolute;
+}
+.links a img {
+  height: 100%;
+  opacity: 0;
+  width: 100%;
 }
 
-footer a {
-  display: flex;
-  height: 100%;
+.mario-link {
+  bottom: 23.2%;
+  height: 4.1%;
+  width: 83.8%;
 }
-
-footer a img {
-  height: 100%;
+.lifecinemas {
+  bottom: 13.2%;
+  height: 5%;
+  width: 24.8%;
+}
+.dimanacho {
+  bottom: 0;
+  height: 6.5%;
+  width: 62%;
 }
 
 @media (min-width: 768px) {
-  .logo-pelicula {
-    width: 300px;
-  }
-
   canvas {
     height: 150px !important;
     width: 600px !important;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait),
+  (device-width: 820px) and (device-height: 1180px) and (orientation: portrait),
+  (device-width: 540px) and (device-height: 720px) and (orientation: portrait),
+  (min-width: 900px) {
+  .links {
+    width: 56.25vh;
+    height: 100vh;
   }
 }
